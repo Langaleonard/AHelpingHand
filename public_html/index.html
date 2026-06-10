@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="text-center mt-4">
+            <div class="text-center mt-4  my-5">
                 <img src="img/image7.jpg" alt="Students supported by the NGO" class="img-fluid rounded shadow">
             </div>
         </div>
@@ -125,14 +125,12 @@
                 <strong>Our Mission:</strong> To bring sustainable change to children's lives through education and opportunities that create a better future.
             </p>
 
-            <div class="videowrapper my-5">
-               <iframe
-    src="https://www.youtube.com/embed/XRFJ_FXUZwU?autoplay=1&mute=1&loop=1&playlist=XRFJ_FXUZwU"
-    title="YouTube video player"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
-</iframe>
+            <div class="youtube-container my-5">
+                <div
+                    class="youtube-player"
+                    data-id="XRFJ_FXUZwU"
+                    data-thumbnail="img/stars.png">
+                </div>
             </div>
         </div>
     </section>
@@ -242,16 +240,16 @@
             <h2 class="text-center mb-5">Photo Gallery</h2>
 
             <div class="gallery text-center">
-                <a href="img/image4.jpg" data-lightbox="mygallery" data-title="First day at school">
-                    <img src="img/image4s.jpg" class="img-fluid" alt="First day at school">
+                <a href="img/image4s.png" data-lightbox="mygallery" data-title="First day at school">
+                    <img src="img/image4s.png" class="img-fluid" alt="First day at school">
                 </a>
 
                 <a href="img/image2.jpg" data-lightbox="mygallery" data-title="Lunch time for all">
                     <img src="img/image2s.jpg" class="img-fluid" alt="Lunch time">
                 </a>
 
-                <a href="img/image6.jpg" data-lightbox="mygallery" data-title="Happy child happy life">
-                    <img src="img/image6.jpg" class="img-fluid" alt="Happy child">
+                <a href="img/image6.png" data-lightbox="mygallery" data-title="Happy children">
+                    <img src="img/image6.png" class="img-fluid" alt="Happy children">
                 </a>
 
                 <a href="img/backg10.jpg" data-lightbox="mygallery" data-title="After school">
@@ -270,8 +268,8 @@
                     <img src="img/photo6s.jpg" class="img-fluid" alt="Everything going well">
                 </a>
 
-                <a href="img/photo3.jpg" data-lightbox="mygallery" data-title="Learning how to write">
-                    <img src="img/photo3s.jpg" class="img-fluid" alt="Learning how to write">
+                <a href="img/image2.png" data-lightbox="mygallery" data-title="Kids Learning">
+                    <img src="img/image2.png" class="img-fluid" alt="Kids Learning">
                 </a>
 
                 <a href="img/photo4.jpg" data-lightbox="mygallery" data-title="Lessons">
@@ -475,6 +473,45 @@
             });
         });
     </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const youtubePlayers = document.querySelectorAll(".youtube-player");
+
+    youtubePlayers.forEach(player => {
+        const videoId = player.getAttribute("data-id");
+        const thumbnail = player.getAttribute("data-thumbnail");
+
+        player.style.backgroundImage = `url(${thumbnail})`;
+
+        const playBtn = document.createElement("div");
+        playBtn.className = "youtube-play-btn";
+        player.appendChild(playBtn);
+
+        player.addEventListener("click", function () {
+            const iframe = document.createElement("iframe");
+
+            iframe.setAttribute(
+                "src",
+                `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`
+            );
+
+            iframe.setAttribute("title", "YouTube video player");
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute(
+                "allow",
+                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            );
+            iframe.setAttribute("allowfullscreen", "true");
+
+            this.innerHTML = "";
+            this.appendChild(iframe);
+        });
+    });
+});
+</script>
+
+    
 
 </body>
 </html>

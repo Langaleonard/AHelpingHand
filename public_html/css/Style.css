@@ -318,3 +318,48 @@ footer hr {
     height: 240px;
   }
 }
+
+.youtube-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.youtube-player {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.22);
+}
+
+.youtube-play-btn {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c9a227, #f1d36b);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.youtube-play-btn::before {
+  content: "";
+  position: absolute;
+  left: 33px;
+  top: 25px;
+  border-left: 22px solid #111418;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
