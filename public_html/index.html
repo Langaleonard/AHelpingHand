@@ -297,7 +297,7 @@
                     <div class="card shadow">
                         <div class="card-body p-4">
 
-                            <form action="/action_page.php">
+                            <form id="volunteerForm">
                                 <div class="mb-3">
                                     <label for="fname" class="form-label">Full Name</label>
                                     <input type="text" maxlength="16" minlength="8" id="fname" name="names" class="form-control" placeholder="Your full name..." required>
@@ -391,7 +391,7 @@
                                 Get updated on our movement to know our next stop and how you can be involved in our activities.
                             </p>
 
-                            <form action="action_page.php">
+                            <form id="newsletterForm">
                                 <div class="mb-3">
                                     <input type="text" class="form-control" placeholder="Name" name="name" required>
                                 </div>
@@ -511,6 +511,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script>
+function handleFormSubmit(formId, message) {
+    const form = document.getElementById(formId);
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        alert(message);
+        form.reset();
+    });
+}
+
+handleFormSubmit("volunteerForm", "Thank you! Your enquiry has been received.");
+handleFormSubmit("newsletterForm", "Thank you for subscribing to our newsletter.");
+</script>
     
 
 </body>
