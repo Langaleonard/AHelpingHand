@@ -1,153 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Save Children</title>
+    <title>A Helping Hand | NGO Website</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="Helping Children">
+    <meta name="description" content="A Helping Hand NGO supports children through education, nutrition, healthcare and community care.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Lightbox -->
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css">
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
+
     <!-- Your CSS -->
-    <link type="text/css" rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Style.css">
 </head>
 
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">
-            A Helping Hand
-        </a>
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">A Helping Hand</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="page2.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="page3.html">Our Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="page4.html">Photo Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="page5.html">Get Involved</a></li>
-                <li class="nav-item"><a class="nav-link" href="page6.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-    <div class="container my-4">
-
-        <nav>
-            <div class="gallery text-center">
-                <img width="130" height="130" src="img/Logo1.png" alt="Logo for the NGO" class="img-fluid">
-            </div>
-        </nav>
-
-        <section class="header"></section>
-
-        <h2 class="text-center my-4">
-            <b>CHILDREN NEED LOVE</b>
-        </h2>
-
-        <h3 class="text-center mb-4">
-            Most of our kids in South Africa are growing up to become unmotivated adults because of unstable backgrounds and challenges
-        </h3>
-
-        <p class="fs-5">
-            It has come to our attention that children are more of an investment and especially to a country's growth.
-            we have to focus on building them and guiding them in order to help them become the best they can be as individuals
-            and citizens of our beloved country. As the A Helping Hand NGO our aim is to help children strive to get quality education,
-            access to the right nutrition and provide health care.
-        </p>
-
-        <p>
-            Having an infant is the most beautiful thing in the world but the only problem is raising the child. Few parents are assisted by the government with social grant to sustain their families but unfortunately the remaining are left neglected and not taken care of.
-        </p>
-
-        <p>
-            We have organized a group of willing women to go out of their way to look after children who are coming from poor communities, we go to their school to give food, clothing, moral support and encouragement.
-        </p>
-
-        <img src="img/image7.jpg" alt="Students" class="center img-fluid my-4">
-
-        <div class="text-center my-4">
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLScaqik_tjcbrx-r3udQkdKXJmL17dvQ4g2xENdF3wHIx_yVyA/viewform?embedded=true"
-                width="600"
-                height="450"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0">
-                Loading…
-            </iframe>
-        </div>
-
-    </div>
-
-    <style>
-        body {
-            background-image: url(img/backg18.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-    </style>
-
-    <footer class="footer bg-dark text-white mt-5 pt-5 pb-3">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <h5>A Helping Hand</h5>
-                <p>
-                    Supporting children through education, care, nutrition and community involvement.
-                </p>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="page2.html">About Us</a></li>
-                    <li><a href="page3.html">Our Work</a></li>
-                    <li><a href="page5.html">Get Involved</a></li>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Our Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#get-involved">Get Involved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
+        </div>
+    </nav>
 
-            <div class="col-md-4 mb-4">
-                <h5>Contact</h5>
-                <p class="mb-1">Kempton Park, South Africa</p>
-                <p class="mb-1">011 630 1537</p>
-                <p class="mb-1">Ahelpinghand@gmail.com</p>
+    <!-- HOME -->
+    <section id="home" class="py-5 text-center">
+        <div class="container">
+            <img src="img/Logo2.png" alt="A Helping Hand NGO logo" class="img-fluid mb-4" width="130">
+
+            <h1 class="display-4 fw-bold">Children Need Love</h1>
+
+            <p class="lead">
+                Helping children in South Africa access education, nutrition, healthcare and emotional support.
+            </p>
+
+            <a href="#get-involved" class="btn btn-danger btn-lg mt-3">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="text-center mb-4">Our Mission</h2>
+
+                    <p>
+                        It has come to our attention that children are more of an investment and especially to a country's growth.
+                        We have to focus on building them and guiding them in order to help them become the best they can be as individuals
+                        and citizens of our beloved country.
+                    </p>
+
+                    <p>
+                        As the A Helping Hand NGO our aim is to help children strive to get quality education,
+                        access to the right nutrition and provide health care.
+                    </p>
+
+                    <p>
+                        We have organized a group of willing women to go out of their way to look after children who are coming from poor communities.
+                        We go to their schools to give food, clothing, moral support and encouragement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <img src="img/image7.jpg" alt="Students supported by the NGO" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+
+            <p>
+                A Helping Hand is a small NGO organization made up of women and men who are committed and passionate about assisting those who are in need.
+            </p>
+
+            <p>
+                It was founded in 2001 by Leonardo Junior Langa whose aim was to minimize child abuse and inequality in underprivileged communities.
+                We mainly assess and explore poor communities and determine how we can become of great use and support.
+                Education, health, and child protection are the key areas we investigate.
+            </p>
+
+            <p>
+                We interact with children and provide protection because there are high levels of violence against women and children.
+                Many cases go unreported and people suffer in silence.
+            </p>
+
+            <p>
+                Some communities experience high dropout rates because children struggle to get to school.
+                School fees, hunger, and responsibilities at home often affect their academic performance.
+                Many begin to believe school is useless, and that is where we step in to encourage and support learners.
+            </p>
+
+            <p>
+                <strong>Our Vision:</strong> To create a brighter tomorrow for deprived children.
+            </p>
+
+            <p>
+                <strong>Our Mission:</strong> To bring sustainable change to children's lives through education and opportunities that create a better future.
+            </p>
+
+            <div class="videowrapper my-5">
+               <iframe
+    src="https://www.youtube.com/embed/XRFJ_FXUZwU?autoplay=1&mute=1&loop=1&playlist=XRFJ_FXUZwU"
+    title="YouTube video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR WORK -->
+    <section id="work" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Work</h2>
+
+            <p>
+                We encourage children to become responsible. We nurture children's interests based on their choices and make learning fun.
+                We give alternatives to the schools we visit by approaching teaching differently in customizable ways so that children can enjoy being in school.
+            </p>
+
+            <p>
+                We teach children their rights and how they should be properly brought up. We also arrange parent meetings so that parents can assist their children with learning,
+                inspire them to think independently and help them become more receptive.
+            </p>
+
+            <p>
+                We provide clothing with the help of other organizations such as Jupiter Clothes and the government.
+                We also give away food to schools such as Sedibeng Primary School, and travel around townships and villages to contribute to child care and protection.
+            </p>
+
+            <h3 class="text-center my-4">What We Do</h3>
+
+            <p>
+                We play a part in helping children access quality education, care and progress in their early childhood.
+                Nutrition and psycho-social support are promoted to reduce poverty and social inequality.
+            </p>
+
+            <div class="row text-center my-5">
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="text-danger">350+</h3>
+                            <p>School Visits</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="text-danger">4+</h3>
+                            <p>Schools Supported</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="text-danger">2001</h3>
+                            <p>Year Founded</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center my-4">Schools and Visitations</h3>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>School Name</th>
+                            <th>Level of Education</th>
+                            <th>Visits</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Sedibeng</td>
+                            <td>Primary</td>
+                            <td>350</td>
+                        </tr>
+                        <tr>
+                            <td>Lesiba</td>
+                            <td>High</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>Boksburg</td>
+                            <td>High</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Benoni</td>
+                            <td>Primary</td>
+                            <td>80</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-4">
+                <img src="img/image1.jpg" alt="Children eating" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Photo Gallery</h2>
+
+            <div class="gallery text-center">
+                <a href="img/image4.jpg" data-lightbox="mygallery" data-title="First day at school">
+                    <img src="img/image4s.jpg" class="img-fluid" alt="First day at school">
+                </a>
+
+                <a href="img/image2.jpg" data-lightbox="mygallery" data-title="Lunch time for all">
+                    <img src="img/image2s.jpg" class="img-fluid" alt="Lunch time">
+                </a>
+
+                <a href="img/image6.jpg" data-lightbox="mygallery" data-title="Happy child happy life">
+                    <img src="img/image6.jpg" class="img-fluid" alt="Happy child">
+                </a>
+
+                <a href="img/backg10.jpg" data-lightbox="mygallery" data-title="After school">
+                    <img src="img/backg10s.jpg" class="img-fluid" alt="After school">
+                </a>
+
+                <a href="img/photo.jpg" data-lightbox="mygallery" data-title="Break">
+                    <img src="img/photos.jpg" class="img-fluid" alt="Break time">
+                </a>
+
+                <a href="img/photo2.jpg" data-lightbox="mygallery" data-title="Food served">
+                    <img src="img/photo2s.jpg" class="img-fluid" alt="Food served">
+                </a>
+
+                <a href="img/photo6.jpg" data-lightbox="mygallery" data-title="Everything going well">
+                    <img src="img/photo6s.jpg" class="img-fluid" alt="Everything going well">
+                </a>
+
+                <a href="img/photo3.jpg" data-lightbox="mygallery" data-title="Learning how to write">
+                    <img src="img/photo3s.jpg" class="img-fluid" alt="Learning how to write">
+                </a>
+
+                <a href="img/photo4.jpg" data-lightbox="mygallery" data-title="Lessons">
+                    <img src="img/photo4s.jpg" class="img-fluid" alt="Lessons">
+                </a>
+
+                <a href="img/photo5.jpg" data-lightbox="mygallery" data-title="Quiz tackling">
+                    <img src="img/photo5s.jpg" class="img-fluid" alt="Quiz tackling">
+                </a>
+
+                <a href="img/photo7.jpg" data-lightbox="mygallery" data-title="Good marks produced">
+                    <img src="img/photo7.jpg" class="img-fluid" alt="Good marks">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section id="get-involved" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Get Involved</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+
+                            <form action="/action_page.php">
+                                <div class="mb-3">
+                                    <label for="fname" class="form-label">Full Name</label>
+                                    <input type="text" maxlength="16" minlength="8" id="fname" name="names" class="form-control" placeholder="Your full name..." required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Your email address..." required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="help" class="form-label">How To Be Of Help</label>
+                                    <select id="help" name="help" class="form-select">
+                                        <option value="sponsor">Sponsor</option>
+                                        <option value="volunteer">Volunteer</option>
+                                        <option value="client">Client</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Enquiry</label>
+                                    <textarea id="subject" name="subject" class="form-control" placeholder="Write something..." rows="8"></textarea>
+                                </div>
+
+                                <div class="mb-4">
+                                    <p class="mb-2">Terms of service:</p>
+
+                                    <div class="form-check form-check-inline">
+                                        <input name="terms" class="form-check-input agree" type="radio" id="agree">
+                                        <label class="form-check-label" for="agree">Agree</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input name="terms" class="form-check-input disagree" type="radio" id="disagree">
+                                        <label class="form-check-label" for="disagree">Disagree</label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-danger">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h3 class="mb-4">Contact Information</h3>
+
+                            <p><i class="fa fa-map-marker"></i> 75 Kempton Road, Kempton Park, South Africa</p>
+                            <p><i class="fa fa-phone"></i> 011 630 1537</p>
+                            <p><i class="fa fa-mobile"></i> 063 007 5403</p>
+                            <p><i class="fa fa-envelope-o"></i> Ahelpinghand@gmail.com</p>
+                            <p><i class="fa fa-whatsapp"></i> https://chat.whatsapp.com/LmY6jVl7BoTFX4LQb1MoDf</p>
+                            <p><i class="fa fa-facebook-official"></i> https://www.facebook.com/groups/531901907383289/</p>
+                            <p><i class="fa fa-clock-o"></i> Mon - Friday: 8:00 AM to 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mb-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447.85430989221584!2d28.235158844751506!3d-26.104321299802194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9514f065050f89%3A0x4c0ee34e78cfef9a!2s75%20Kempton%20Rd%2C%20Kempton%20Park%2C%201620!5e0!3m2!1sen!2sza!4v1648134229707!5m2!1sen!2sza"
+                        width="100%"
+                        height="500"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3>Join our Newsletter</h3>
+
+                            <p>
+                                Get updated on our movement to know our next stop and how you can be involved in our activities.
+                            </p>
+
+                            <form action="action_page.php">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Name" name="name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email Address" name="mail" required>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" checked name="subscribe" id="volunteer">
+                                    <label class="form-check-label" for="volunteer">
+                                        Opt-in to become a volunteer
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-danger">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+    </section>
 
-        <hr>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>A Helping Hand</h5>
+                    <p>
+                        Supporting children through education, care, nutrition and community involvement.
+                    </p>
+                </div>
 
-        <p class="text-center mb-0">
-            &copy; <span id="year"></span> A Helping Hand. All rights reserved.
-        </p>
-    </div>
-</footer>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#work" class="text-white text-decoration-none">Our Work</a></li>
+                        <li><a href="#get-involved" class="text-white text-decoration-none">Get Involved</a></li>
+                    </ul>
+                </div>
 
-    <!-- Bootstrap JS -->
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <p class="mb-1">Kempton Park, South Africa</p>
+                    <p class="mb-1">011 630 1537</p>
+                    <p class="mb-1">Ahelpinghand@gmail.com</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="text-center mb-0">
+                &copy; <span id="year"></span> A Helping Hand. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Small JavaScript -->
     <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("year").textContent = new Date().getFullYear();
 
-    const currentPage = window.location.pathname.split("/").pop() || "index.html";
-    const navLinks = document.querySelectorAll(".navbar .nav-link");
+        const navLinks = document.querySelectorAll(".navbar .nav-link");
 
-    navLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-        }
-    });
-</script>
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.forEach(item => item.classList.remove("active"));
+                link.classList.add("active");
+            });
+        });
+    </script>
 
 </body>
 </html>
