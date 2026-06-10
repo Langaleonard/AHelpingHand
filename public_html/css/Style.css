@@ -165,3 +165,33 @@ input[type=submit]:hover {
     transform: scale(1.1);
 }
 .disagree:checked ~ input[type="submit"]{display: none}
+
+/* Modern Navbar */
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+  margin-left: 10px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: tomato !important;
+}
+
+/* Footer */
+.footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: tomato;
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
